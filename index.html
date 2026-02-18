@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartamento de Luxo no Jockey | Edifício Ipanema</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+
+    <!-- intl-tel-input CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/css/intlTelInput.css">
+
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="logo">
+                <img src="/.netlify/images?url=/images/logo-vitorsady.png&w=300&q=80" alt="Vitor Sady Logo"
+                    class="logo__img" style="height: 80px; width: auto; filter: brightness(0) invert(1);">
+            </a>
+            <nav class="nav">
+                <a href="#o-apartamento" class="nav__link">O Apartamento</a>
+                <a href="#localizacao" class="nav__link">Localização</a>
+                <a href="#contato" class="btn btn--primary btn--sm">Agendar Visita</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section (Archetype: Hero Dominante) -->
+    <section class="hero">
+        <div class="hero__bg-container">
+            <!-- Using a high-quality placeholder for luxury interior -->
+            <img src="/.netlify/images?url=/images/sala%20com%20varanda-ipanema.jpeg&w=2000&q=80"
+                alt="Sala de estar com varanda no Ipanema" class="hero__bg-img" loading="eager">
+            <div class="hero__overlay"></div>
+        </div>
+
+        <div class="container hero__content">
+            <span class="hero__tag">Jockey Club • Teresina</span>
+            <h1 class="hero__headline">
+                Viva o Auge da Exclusividade no Coração do Jockey
+            </h1>
+            <p class="hero__subheadline">
+                Apartamento de luxo com 167m², 3 suítes e lazer completo a passos da Av. Jóquei Clube.
+            </p>
+            <div class="hero__actions">
+                <a href="#contato" class="btn btn--primary btn--lg">
+                    Agendar Visita Exclusiva
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Para Quem é (Constraint: Grid Clean) -->
+    <section class="section section--light" id="para-quem">
+        <div class="container">
+            <div class="grid-split grid-split--image-left">
+                <div class="split__content" data-aos="fade-up" data-aos-duration="1000">
+                    <span class="section__tag">Seu Novo Estilo de Vida</span>
+                    <h2 class="section__title">O Lar Que Você e Sua Família Merecem</h2>
+                    <p class="section__desc">
+                        Projetado para quem não abre mão de sofisticação, espaço e da localização mais cobiçada da
+                        cidade.
+                    </p>
+
+                    <ul class="feature-list">
+                        <li class="feature-item">
+                            <span class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                </svg>
+                            </span>
+                            <div class="feature-text">
+                                <strong>Privacidade Total</strong>
+                                <p>3 suítes plenas para o conforto de toda a família.</p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </span>
+                            <div class="feature-text">
+                                <strong>Localização Premium</strong>
+                                <p>No coração do Jockey, perto de tudo.</p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 10v6M2 10v6"></path>
+                                    <path
+                                        d="M12 22a9.7 9.7 0 0 1-9-6 3.5 3.5 0 0 1 1.05-3.3l.96-.51a1 1 0 0 1 1.25.13l1.8 1.8a1 1 0 0 0 1.4 0l4.3-4.3a1 1 0 0 1 1.4 0l1.8 1.8a1 1 0 0 0 1.25.13l.96-.51A3.5 3.5 0 0 1 22 16a9.7 9.7 0 0 1-9 6z">
+                                    </path>
+                                    <path d="M16 2v2"></path>
+                                    <path d="M8 2v2"></path>
+                                </svg>
+                            </span>
+                            <div class="feature-text">
+                                <strong>Família em Primeiro Lugar</strong>
+                                <p>Próximo às melhores escolas como Lerote e Dom Barreto.</p>
+                            </div>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                            </span>
+                            <div class="feature-text">
+                                <strong>Imóvel Novo</strong>
+                                <p>Primeiro dono, pronto para morar.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="split__image" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="image-frame">
+                        <img src="/.netlify/images?url=/images/fachada1-ipanema.jpeg&w=1200&q=80"
+                            alt="Fachada do Edifício Ipanema" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: O Apartamento (Bento Box) -->
+    <section class="section" id="o-apartamento">
+        <div class="container">
+            <div class="section__header" data-aos="fade-up">
+                <span class="section__tag">Detalhes Exclusivos</span>
+                <h2 class="section__title">Sofisticação em Cada Detalhe</h2>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Card 1: 167m² (Large) -->
+                <div class="bento-card bento-card--large" data-aos="fade-up" data-aos-delay="100">
+                    <img src="/.netlify/images?url=/images/sala%20com%20varanda-ipanema.jpeg&w=1200&q=80"
+                        alt="Sala ampla" class="bento-bg" loading="lazy" width="1200" height="800">
+                    <div class="bento-overlay"></div>
+                    <div class="bento-icon">
+                        <i class="ph ph-arrows-out-cardinal"></i>
+                    </div>
+                    <div class="bento-content relative">
+                        <h3>167m² de área privativa com acabamento de alto padrão</h3>
+                    </div>
+                </div>
+
+                <!-- Card 2: 3 Suítes -->
+                <div class="bento-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="/.netlify/images?url=/images/suite%20com%20varanda-ipanema.jpeg&w=800&q=80" alt="Suíte"
+                        class="bento-bg" loading="lazy" width="800" height="600">
+                    <div class="bento-overlay"></div>
+                    <div class="bento-icon">
+                        <i class="ph ph-bed"></i>
+                    </div>
+                    <div class="bento-content relative">
+                        <h3>3 Suítes plenas com privacidade total para a família</h3>
+                    </div>
+                </div>
+
+                <!-- Card 3: Sala Estar/Jantar -->
+                <div class="bento-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="/.netlify/images?url=/images/sala-ipanema.jpeg&w=800&q=80" alt="Sala de Estar"
+                        class="bento-bg" loading="lazy" width="800" height="600">
+                    <div class="bento-overlay"></div>
+                    <div class="bento-icon">
+                        <i class="ph ph-armchair"></i>
+                    </div>
+                    <div class="bento-content relative">
+                        <h3>Ampla Sala de Estar e Jantar integradas</h3>
+                    </div>
+                </div>
+
+                <!-- Card 4: Cozinha -->
+                <div class="bento-card" data-aos="fade-up" data-aos-delay="400">
+                    <img src="/.netlify/images?url=/images/cozinha-ipanema.jpeg&w=800&q=80" alt="Cozinha"
+                        class="bento-bg" loading="lazy" width="800" height="600">
+                    <div class="bento-overlay"></div>
+                    <div class="bento-icon">
+                        <i class="ph ph-cooking-pot"></i>
+                    </div>
+                    <div class="bento-content relative">
+                        <h3>Cozinha espaçosa com área de serviço e dependência completa</h3>
+                    </div>
+                </div>
+
+                <!-- Card 5: Área de Lazer (Atualizado) -->
+                <div class="bento-card" data-aos="fade-up" data-aos-delay="500">
+                    <img src="/.netlify/images?url=/images/piscina-ipanema.jpeg&w=800&q=80" alt="Piscina"
+                        class="bento-bg" loading="lazy" width="800" height="600">
+                    <div class="bento-overlay"></div>
+                    <div class="bento-icon">
+                        <i class="ph ph-swimming-pool"></i>
+                    </div>
+                    <div class="bento-content relative">
+                        <h3>Área de lazer completa</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Explore Seu Novo Lar (Video Tour) -->
+    <section class="section section--light" id="galeria">
+        <div class="container">
+            <div class="grid-split grid-split--video">
+                <div class="split__content" data-aos="fade-right"
+                    style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+
+                    <h2 class="section__title">Explore Seu Novo Lar</h2>
+                    <p class="section__desc">
+                        Conheça detalhes deste empreendimento magnífico.
+                    </p>
+                    <div class="video-highlights" style="text-align: center; align-items: center;">
+                        <div class="highlight-item" style="justify-content: center; text-align: center;">
+                            <span style="display: block; max-width: 350px; margin: 0 auto; font-size: 1rem;">Confira
+                                o vídeo e detalhes<br>desse investimento perfeito para você</span>
+                        </div>
+
+                    </div>
+                    <a href="#contato" class="btn btn--accent btn--lg desktop-only"
+                        style="margin-top: 2rem; display: table; margin-left: auto; margin-right: auto;">
+                        Quero Visitar Pessoalmente
+                    </a>
+
+                </div>
+                <div class="split__video" data-aos="fade-left">
+                    <div class="video-container-vertical">
+                        <div class="video-wrapper">
+                            <video class="video-element" loop playsinline
+                                poster="/.netlify/images?url=/images/fachada1-ipanema.jpeg&w=800&q=80"
+                                style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;">
+                                <source src="/images/video-ipanema.MOV" type="video/quicktime">
+                                <source src="/images/video-ipanema.MOV" type="video/mp4">
+                                Seu navegador não suporta vídeos.
+                            </video>
+                            <div class="video-play-btn">
+                                <i class="ph-fill ph-play" style="font-size: 5rem; color: white;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contato" class="btn btn--accent btn--lg mobile-only"
+                        style="margin-top: 2rem; display: table; margin-left: auto; margin-right: auto;">
+                        Quero Visitar Pessoalmente
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Lazer e Convivência (Zig-Zag) -->
+    <section class="section" id="lazer">
+        <div class="container">
+            <div class="section__header" data-aos="fade-up">
+                <span class="section__tag">Exclusividade</span>
+                <h2 class="section__title">Lazer de Resort, Privacidade de Casa</h2>
+            </div>
+
+            <div class="leisure-cards-grid">
+                <!-- Card 1: Piscina -->
+                <div class="leisure-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="leisure-card__icon">
+                        <i class="ph ph-swimming-pool"></i>
+                    </div>
+                    <h3 class="leisure-card__title">Piscina com Deck Molhado</h3>
+                    <p class="leisure-card__desc">Relaxe nos dias de sol ou aproveite para se exercitar na raia
+                        semi-olimpica.</p>
+                    <ul class="leisure-card__features">
+                        <li><i class="ph ph-check-circle"></i> Raia de 25m</li>
+                        <li><i class="ph ph-check-circle"></i> Deck Solarium</li>
+                        <li><i class="ph ph-check-circle"></i> Piscina Infantil Separada</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2: Espaco Gourmet -->
+                <div class="leisure-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="leisure-card__icon">
+                        <i class="ph ph-fork-knife"></i>
+                    </div>
+                    <h3 class="leisure-card__title">Espaco Gourmet Integrado</h3>
+                    <p class="leisure-card__desc">O cenario ideal para seus eventos, totalmente equipado e decorado.</p>
+                    <ul class="leisure-card__features">
+                        <li><i class="ph ph-check-circle"></i> Churrasqueira a Carvao</li>
+                        <li><i class="ph ph-check-circle"></i> Forno de Pizza</li>
+                        <li><i class="ph ph-check-circle"></i> Climatizado</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3: Salao de Festas -->
+                <div class="leisure-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="leisure-card__icon">
+                        <i class="ph ph-champagne"></i>
+                    </div>
+                    <h3 class="leisure-card__title">Salao de Festas Premium</h3>
+                    <p class="leisure-card__desc">Sofisticacao para receber seus convidados em grandes celebracoes.</p>
+                    <ul class="leisure-card__features">
+                        <li><i class="ph ph-check-circle"></i> Capacidade para 80 pessoas</li>
+                        <li><i class="ph ph-check-circle"></i> Isolamento Acustico</li>
+                        <li><i class="ph ph-check-circle"></i> Cozinha de Apoio</li>
+                    </ul>
+                </div>
+
+                <!-- Card 4: Academia -->
+                <div class="leisure-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="leisure-card__icon">
+                        <i class="ph ph-barbell"></i>
+                    </div>
+                    <h3 class="leisure-card__title">Academia & Esportes</h3>
+                    <p class="leisure-card__desc">Mantenha a forma sem sair de casa com equipamentos de ultima geracao.
+                    </p>
+                    <ul class="leisure-card__features">
+                        <li><i class="ph ph-check-circle"></i> Fitness Center Equipado</li>
+                        <li><i class="ph ph-check-circle"></i> Quadra Poliesportiva</li>
+                        <li><i class="ph ph-check-circle"></i> Espaco Pilates</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Localização (Map) -->
+    <section class="section section--light" id="localizacao">
+        <div class="container">
+            <div class="section__header" data-aos="fade-up">
+                <span class="section__tag">Localização Premium</span>
+                <h2 class="section__title">A Melhor Localização de Teresina</h2>
+                <p class="section__desc">No coração do Jockey, você está a poucos passos de tudo o que precisa.</p>
+            </div>
+
+            <div class="location-container">
+                <!-- Lista de Proximidade -->
+                <div class="location-list" data-aos="fade-right">
+                    <div class="location-item">
+                        <div class="location-icon">
+                            <i class="ph ph-map-pin"></i>
+                        </div>
+                        <div class="location-info">
+                            <strong>Endereço Nobre</strong>
+                            <span>R. Epaminondas C. Branco, 969 - Jockey<br>A 20m da Av. Jóquei Clube</span>
+                        </div>
+                    </div>
+                    <div class="location-item">
+                        <div class="location-icon">
+                            <i class="ph ph-graduation-cap"></i>
+                        </div>
+                        <div class="location-info">
+                            <strong>Grandes colégios na região</strong>
+                            <span>Dom Barreto, Lerote, Bright Bee, e outros</span>
+                        </div>
+                    </div>
+                    <div class="location-item">
+                        <div class="location-icon">
+                            <i class="ph ph-shopping-cart"></i>
+                        </div>
+                        <div class="location-info">
+                            <strong>Assaí Atacadista</strong>
+                            <span>Próximo (2 min de carro)</span>
+                        </div>
+                    </div>
+                    <div class="location-item">
+                        <div class="location-icon">
+                            <i class="ph ph-fork-knife"></i>
+                        </div>
+                        <div class="location-info">
+                            <strong>Melhores restaurantes de Teresina</strong>
+                            <span>Coco Bambu, Faustino, Vito Fogo, entre outros</span>
+                        </div>
+                    </div>
+                    <div class="location-item">
+                        <div class="location-icon">
+                            <i class="ph ph-first-aid-kit"></i>
+                        </div>
+                        <div class="location-info">
+                            <strong>Farmácias e Academias</strong>
+                            <span>Diversas opções no entorno</span>
+                        </div>
+                    </div>
+
+                    <a href="https://www.google.com/maps/place/Condom%C3%ADnio+Ipanema/@-5.072639,-42.791676,15z"
+                        target="_blank" class="btn btn--primary btn--outline">
+                        Abrir no Google Maps
+                        <i class="ph ph-arrow-up-right"></i>
+                    </a>
+                </div>
+
+                <!-- Mapa Google Maps -->
+                <div class="location-map" data-aos="fade-left">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7948.383612598257!2d-42.791676305559115!3d-5.072639179616564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e3b001b61cc8d%3A0xbdd4f59ca7534619!2sCondom%C3%ADnio%20Ipanema!5e0!3m2!1spt-BR!2sbr!4v1770845676160!5m2!1spt-BR!2sbr"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Investimento -->
+    <section class="section" id="investimento">
+        <div class="container container--narrow">
+            <div class="section__header" data-aos="fade-up">
+                <h2 class="section__title" style="text-align:center;">Investimento com Pagamento Facilitado</h2>
+            </div>
+
+            <div class="investment-card" data-aos="zoom-in">
+                <span class="investment-tag">Oportunidade Exclusiva</span>
+                <h2 class="investment-price">R$ 1.750.000,00</h2>
+                <div class="investment-features">
+                    <span><i class="ph ph-hand-coins"></i> Entrada Facilitada (negociável)</span>
+                    <span><i class="ph ph-bank"></i> Financiamento Bancário</span>
+                    <span><i class="ph ph-file-text"></i> Documentação 100% Regularizada</span>
+                    <span><i class="ph ph-seal-check"></i> Imóvel Novo - Primeiro Dono</span>
+                </div>
+            </div>
+
+            <div class="investment-form" id="contato" data-aos="fade-up" data-aos-delay="150">
+                <h3 class="investment-form__title">Agende sua Visita Exclusiva</h3>
+                <p class="investment-form__desc">Preencha seus dados para agendar visita ou falar com o corretor.</p>
+                <form id="lead-form" name="lead-ipanema" method="POST" action="/obrigado.html" data-netlify="true"
+                    netlify-honeypot="bot-field" class="investment-form__form" data-form>
+
+                    <!-- OBRIGATÓRIO para AJAX -->
+                    <input type="hidden" name="form-name" value="lead-ipanema">
+
+                    <!-- Honeypot -->
+                    <p hidden><label>Não preencha: <input name="bot-field"></label></p>
+
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Seu Nome" required autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" required autocomplete="tel">
+                    </div>
+
+                    <div class="form-feedback"></div>
+
+                    <button type="submit" class="btn btn--primary btn--lg btn--full">
+                        Agendar Visita
+                        <i class="ph ph-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="faq-section" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="faq-title">Perguntas Frequentes</h3>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            O apartamento é novo?
+                            <i class="ph ph-caret-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Sim, é um imóvel novo, nunca habitado (primeiro dono).</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Quantas vagas de garagem?
+                            <i class="ph ph-caret-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>São 3 vagas de garagem cobertas e soltas.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Aceita financiamento?
+                            <i class="ph ph-caret-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Sim, trabalhamos com todos os bancos para aprovação do seu crédito.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Como agendar uma visita?
+                            <i class="ph ph-caret-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Basta preencher o formulário abaixo e falar diretamente comigo.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            O condomínio permite animais de estimação?
+                            <i class="ph ph-caret-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Sim, o condomínio é Pet Friendly e conta com áreas de passeio próximas ao empreendimento.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Qual o prazo de entrega do imóvel?
+                            <i class="ph ph-caret-down"></i>
+                        </button>
+                        <div class="accordion-content">
+                            <p>O Edifício Ipanema já está pronto para morar! Agende sua visita e mude-se imediatamente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- Qualification Modal -->
+    <div id="quiz-modal" class="modal-overlay" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Fechar">&times;</button>
+
+            <div id="quiz-step-1" class="quiz-step active">
+                <h3>Estamos quase lá!</h3>
+                <p>Responda rápido para personalizarmos seu atendimento.</p>
+
+                <form id="quiz-form" name="qualification-ipanema" method="POST" action="/obrigado.html"
+                    data-netlify="true" netlify-honeypot="bot-field">
+                    <!-- OBRIGATÓRIO para AJAX -->
+                    <input type="hidden" name="form-name" value="qualification-ipanema">
+
+                    <!-- Honeypot -->
+                    <p hidden><label>Não preencha: <input name="bot-field"></label></p>
+
+                    <!-- Hidden inputs para vincular ao lead -->
+                    <input type="hidden" name="lead_name" id="quiz-lead-name">
+                    <input type="hidden" name="lead_phone" id="quiz-lead-phone">
+
+                    <div class="quiz-question">
+                        <label>Qual sua urgência para adquirir o imóvel?</label>
+                        <div class="quiz-options">
+                            <label class="quiz-option">
+                                <input type="radio" name="urgency" value="Imediata" required>
+                                <span>Imediatamente</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="urgency" value="3 meses">
+                                <span>Até 3 meses</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="urgency" value="1 ano">
+                                <span>Até 1 ano</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-question">
+                        <label>Qual a sua renda familiar mensal?</label>
+                        <div class="quiz-options">
+                            <label class="quiz-option">
+                                <input type="radio" name="income" value="Até 10k" required>
+                                <span>Até R$ 10.000</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="income" value="10k-15k">
+                                <span>R$ 10.000 a R$ 15.000</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="income" value="15k-25k">
+                                <span>R$ 15.000 a R$ 25.000</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="income" value="25k-35k">
+                                <span>R$ 25.000 a R$ 35.000</span>
+                            </label>
+                            <label class="quiz-option">
+                                <input type="radio" name="income" value="+35k">
+                                <span>Mais de R$ 35.000</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-feedback"></div>
+                    <button type="submit" class="btn btn--primary btn--full">Concluir Agendamento</button>
+                </form>
+            </div>
+
+            <div id="quiz-success" class="quiz-step">
+                <div class="success-icon">
+                    <i class="ph ph-check-circle"></i>
+                </div>
+                <h3>Agendamento Confirmado!</h3>
+                <p>Obrigado, <span id="user-name-display"></span>. Recebemos seus dados e em breve entraremos em contato
+                    pelo WhatsApp para confirmar o horário.</p>
+                <button class="btn btn--primary btn--outline modal-close-btn">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="/.netlify/images?url=/images/logo-vitorsady.png&w=300&q=80" alt="Vitor Sady Logo"
+                            class="logo__img" style="height: 80px; width: auto; filter: brightness(0) invert(1);">
+                    </a>
+                    <p>Imóveis de Alto Padrão</p>
+                </div>
+                <div class="footer-contact">
+                    <strong>Vitor Sady</strong>
+                    <span>Corretor de Imóveis - CRECI 1688-PI</span>
+                    <a href="tel:+5586999910357" class="footer-phone">+55 86 99991-0357</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vitor Sady Business. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- intl-tel-input JS -->
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/js/intlTelInput.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+
+    <script>
+        AOS.init({
+            disableMutationObserver: true,
+            once: true,
+            offset: 50
+        });
+    </script>
+</body>
+
+</html>
